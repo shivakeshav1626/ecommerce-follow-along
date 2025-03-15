@@ -9,7 +9,7 @@ export default function Product({ name, images = [], description, price }) {
       setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
     }, 150000);
     return () => clearInterval(interval);
-  }, [images]); // ✅ Runs when images array length changes
+  }, [images]); 
 
   const currentImage = images?.[currentIndex] || "placeholder.jpg";
 console.log(currentImage)
@@ -34,4 +34,3 @@ console.log(currentImage)
     </div>
   );
 }
-/** */
