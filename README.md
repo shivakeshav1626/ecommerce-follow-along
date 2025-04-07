@@ -1,2 +1,2 @@
-<h1>Milestone 24</h1>
-We will created an order conformation page.
+<h1>Milestone 28</h1>
+The use will be able to cancel the placed orders.
