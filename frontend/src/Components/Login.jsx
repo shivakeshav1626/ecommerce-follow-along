@@ -3,7 +3,7 @@ import { IoEye } from "react-icons/io5";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { Link, useNavigate } from 'react-router-dom';
 import { IoMdMail } from "react-icons/io";
-import server from '../server';
+import server from '../../server';
 import axios from 'axios'
 import { toast } from 'react-toastify';
 
@@ -15,7 +15,7 @@ const [visible,setVisible]=useState(false)
 
 const handleSubmit=async(e)=>{
 e.preventDefault()
-await axios.post(`${server}/login-user`,{email,password,},{withCredentials: true}).
+await axios.post(`${server}/user/login-user`,{email,password,},{withCredentials: true}).
 then(res=>{toast.success("login success!")
   navigate("/")
 })
