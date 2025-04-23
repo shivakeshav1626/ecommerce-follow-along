@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,7 +7,7 @@ import { LoginPage,Signup,ActivationPage,HomePage,CreateProduct,MyProduct,Produc
 import { Bounce } from "react-awesome-reveal";
 import server from './server';
 import axios from 'axios';
-
+import React from 'react';
 function App() {
     const [count, setCount] = useState(0);
 
